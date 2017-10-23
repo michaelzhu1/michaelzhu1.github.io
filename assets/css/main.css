@@ -2809,6 +2809,17 @@
 		text-align: center;
 	}
 
+		#header .logo {
+			display: block;
+			height: inherit;
+			line-height: inherit;
+			width: 150px;
+			position: absolute;
+			top: 0px;
+			padding: 10px;
+			left: 0px;
+		}
+
 		#header a {
 			border-bottom-color: rgba(255, 255, 255, 0.5);
 		}
