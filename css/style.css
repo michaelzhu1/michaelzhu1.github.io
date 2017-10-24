@@ -1,13 +1,13 @@
 /*
     Template Name: Nipp - personal portfolio template
-    Author: 
-    Author URI: 
+    Author:
+    Author URI:
     Description: A personal portfolio landing page template
     Version: 1.0
 */
 
 
-/* 
+/*
 ==================================================
    CSS Table Content
 ==================================================
@@ -15,7 +15,7 @@
 1.  General styles
     - Fonts
     - Link style
-    - Heading 
+    - Heading
     - Background color
     - Default button cutomization
 
@@ -61,7 +61,7 @@ body {
 /*=============================================
     - Link style
 ===============================================*/
-    
+
 a {
     cursor: pointer;
     text-decoration: none;
@@ -98,7 +98,7 @@ a:focus{
 }
 
 
-/*============================================ 
+/*============================================
     - Heading
 ==============================================*/
 
@@ -173,7 +173,7 @@ h1,h2,h3,h4,h5,h6 {
 
 
 /*======================================================
-     navigation 
+     navigation
 ==========================================================*/
 
 
@@ -198,7 +198,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .background-overlay.grey {
     background: rgba(0, 0, 0, 0.85);
-    position: absolute;  
+    position: absolute;
 }
 
 .navbar-default {
@@ -240,6 +240,9 @@ h1,h2,h3,h4,h5,h6 {
   color: #cccccc !important;
 }
 
+.logo-title {
+  color: white;
+}
 /*============================================
     SLIDER SECTION
 ===============================================*/
@@ -250,7 +253,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .section-intro{
     height: 100%;
-    background: #222 url("../images/bg/banner.jpg") no-repeat fixed 50% 50% / cover;
+    background: #222 url("../images/personal/banner.jpg") no-repeat fixed 50% 50% / cover;
     padding: 0px;
     position: relative;
     overflow: hidden;
@@ -388,7 +391,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /*============================================
-   SECTION PORTFOLIO 
+   SECTION PORTFOLIO
 ===============================================*/
 
 
@@ -630,7 +633,7 @@ ul.work li.active {
 }
 
 .signup p{
-    text-align: center; 
+    text-align: center;
 }
 
 #comments {
@@ -900,4 +903,3 @@ ul.work li.active {
 
 
 /*extra*/
-
