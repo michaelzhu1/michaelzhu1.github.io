@@ -439,6 +439,8 @@ ul.work li.active {
 
 .work .item {
     position: relative;
+    width: 600px;
+    height: 300px;
 }
 
 .work .item img {
@@ -463,6 +465,7 @@ ul.work li.active {
     filter: alpha(opacity=0);
     -webkit-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;
+    display: block;
 }
 
 .portfolio-caption h4 {
@@ -486,7 +489,7 @@ ul.work li.active {
 }
 
 .work .item:hover .portfolio-caption h4 {
-    margin-top: 150px;
+    margin-top: 50px;
     -webkit-transition: .3s;
     transition: .3s;
 }
