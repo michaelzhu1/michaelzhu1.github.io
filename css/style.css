@@ -399,7 +399,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .work-inner {
-    margin-top: 60px;
+    margin-top: 10px;
 }
 
 .work-inner .mix {
@@ -489,7 +489,7 @@ ul.work li.active {
 }
 
 .work .item:hover .portfolio-caption h4 {
-    margin-top: 100px;
+    margin-top: 80px;
     -webkit-transition: .3s;
     transition: .3s;
 }
@@ -505,6 +505,18 @@ ul.work li.active {
 }
 .col-md-12 {
   height: 60px;
+}
+.project-link {
+  text-decoration: underline;
+  /*text-align: center;*/
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+  padding-top: 5px;
+  max-height: 33px;
+}
+.project-link a {
+  color: #2284E6;
 }
 /*====================================================
     section blog
