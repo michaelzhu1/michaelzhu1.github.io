@@ -197,7 +197,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .background-overlay.grey {
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0, 0.55);
     position: absolute;
 }
 
@@ -291,7 +291,7 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
     width: 40px;
 }
-.fa-google-plus{
+.fa-envelope-o{
     background-color: #DD4D40;
     border-radius: 32px;
     height: 40px;
@@ -306,17 +306,16 @@ h1,h2,h3,h4,h5,h6 {
     padding: 13px;
     text-align: center;
     width: 40px;
-
 }
-.fa-behance{
-    background-color: #2284E6;
+.fa-github{
+    background-color: #394149;
     border-radius: 32px;
     height: 40px;
     padding: 13px;
     text-align: center;
     width: 40px;
 }
-
+/*#2284E6;*/
 
 /*================================================================
         section about
@@ -439,8 +438,6 @@ ul.work li.active {
 
 .work .item {
     position: relative;
-    width: 600px;
-    height: 300px;
 }
 
 .work .item img {
@@ -486,12 +483,17 @@ ul.work li.active {
     filter: alpha(opacity=100);
     -webkit-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;
+    cursor: zoom-in;
 }
 
 .work .item:hover .portfolio-caption h4 {
-    margin-top: 50px;
+    margin-top: 150px;
     -webkit-transition: .3s;
     transition: .3s;
+}
+
+.project-title {
+  text-align: center;
 }
 
 /*====================================================
