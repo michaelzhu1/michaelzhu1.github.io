@@ -508,7 +508,6 @@ ul.work li.active {
 }
 .project-link {
   text-decoration: underline;
-  /*text-align: center;*/
   display: flex;
   align-self: center;
   justify-content: space-around;
