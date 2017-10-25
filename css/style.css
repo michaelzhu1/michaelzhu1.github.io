@@ -248,7 +248,7 @@ h1,h2,h3,h4,h5,h6 {
 ===============================================*/
 
 .section-padding {
-    padding: 90px 0px;
+    padding:40px 0px;
 }
 
 .section-intro{
@@ -352,7 +352,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .section-heading {
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 0px;
 }
 
 .service-box {
@@ -495,7 +495,15 @@ ul.work li.active {
 .project-title {
   text-align: center;
 }
-
+.service-item {
+  text-align: center;
+}
+.fa-stack {
+  height: 120px;
+}
+.col-md-12 {
+  height: 60px;
+}
 /*====================================================
     section blog
 ==========================================================*/
@@ -771,11 +779,6 @@ ul.work li.active {
 /*=====================================================
     SECTION CONTACT
 ==========================================================*/
-
-.section-contact {
-     padding: 90px 0;
-}
-
 .henry-contact-form {
   background: #f9f9f9 none repeat scroll 0 0;
   padding-left: 0;
