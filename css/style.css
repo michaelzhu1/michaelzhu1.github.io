@@ -307,6 +307,14 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
     width: 40px;
 }
+.fa-angellist{
+    background-color: #2284E6;
+    border-radius: 32px;
+    height: 40px;
+    padding: 13px;
+    text-align: center;
+    width: 40px;
+}
 .fa-github{
     background-color: #394149;
     border-radius: 32px;
