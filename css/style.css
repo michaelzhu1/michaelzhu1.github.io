@@ -525,6 +525,9 @@ ul.work li.active {
 .project-link a {
   color: #2284E6;
 }
+.project-description {
+  text-align: center;
+}
 /*====================================================
     section blog
 ==========================================================*/
