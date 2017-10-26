@@ -643,7 +643,7 @@
                                     <h2>Get Connected</h2>
                                 </div>
 
-                                <form action="mail.php" method="POST" class="form-padding">
+                                <!-- <form action="mail.php" method="POST" class="form-padding">
                                     <div class="input-group form-group">
                                         <span class="input-group-addon"><i class="fa fa-user"></i></span>
                                         <input type="text" name="name"  class="form-control" required="required" placeholder="Full Name">
@@ -660,7 +660,56 @@
                                         <textarea id="message" name="message" cols="30" rows="5" class="textarea-block form-control" placeholder="MESSAGE" required="required"></textarea>
                                     </div>
                                     <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
-                                </form>
+                                </form> -->
+                                <form name="contactform" method="post" action="mail.php">
+<table width="450px">
+<tr>
+ <td valign="top">
+  <label for="first_name">First Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="first_name" maxlength="50" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="last_name">Last Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="last_name" maxlength="50" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="email">Email Address *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="email" maxlength="80" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="telephone">Telephone Number</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="telephone" maxlength="30" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="comments">Comments *</label>
+ </td>
+ <td valign="top">
+  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+ </td>
+</tr>
+<tr>
+ <td colspan="2" style="text-align:center">
+  <input type="submit" value="Submit">   <a href="http://www.freecontactform.com/email_form.php">Email Form</a>
+ </td>
+</tr>
+</table>
+</form>
                             </div>
                         </div>
                         <div class="col-md-5 henry-address">
@@ -691,6 +740,7 @@
                         <ul class="list-inline nipp-social-icon">
                           <li><a href="https://www.linkedin.com/in/michael-zhu/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                           <li><a href="https://github.com/michaelzhu1"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                          <li><a href="https://angel.co/michael-zhu-7"><i class="fa fa-angellist" aria-hidden="true"></i></a></li>
                           <li><a href="https://www.facebook.com/michael.zhu.9"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                           <li><a href="mailto:mzhu105@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
 
