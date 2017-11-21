@@ -505,9 +505,36 @@ ul.work li.active {
 .project-title {
   text-align: center;
 }
+
+.outer-skill {
+  display: flex;
+}
+.align-left {
+  float: left;
+}
+.align-right {
+  float: right;
+}
+.slide-in {
+  opacity: 0;
+  transition:all .5s;
+}
+.align-left.slide-in {
+  transform: translateX(-80%) scale(0.55);
+}
+.align-right.slide-in {
+  transform: translateX(80%) scale(0.55);
+}
+.slide-in.active {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
+  margin:0 auto;
+}
+
 .service-item {
   text-align: center;
 }
+
 .fa-stack {
   height: 120px;
 }

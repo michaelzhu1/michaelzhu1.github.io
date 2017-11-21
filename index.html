@@ -182,8 +182,8 @@
             <hr class="small">
             <div class="row">
 
-                <div class="col-md-3 col-sm-6">
-                    <div class="service-item">
+                <div class="col-md-3 col-sm-6 outer-skill">
+                    <div class="service-item align-left slide-in">
                         <span class="fa-stack fa-5x">
                             <i class="devicon-ruby-plain-wordmark colored"></i>
                         </span>
@@ -193,8 +193,8 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6">
-                    <div class="service-item">
+                <div class="col-md-3 col-sm-6 outer-skill">
+                    <div class="service-item align-left slide-in">
                         <span class="fa-stack fa-5x">
                             <i class="devicon-rails-plain-wordmark colored"></i>
                         </span>
@@ -204,8 +204,8 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6">
-                    <div class="service-item">
+                <div class="col-md-3 col-sm-6 outer-skill">
+                    <div class="service-item align-right slide-in">
                         <span class="fa-stack fa-5x">
                             <i class="devicon-javascript-plain colored"></i>
                         </span>
@@ -215,8 +215,8 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6">
-                    <div class="service-item">
+                <div class="col-md-3 col-sm-6 outer-skill">
+                    <div class="service-item align-right slide-in">
                         <span class="fa-stack fa-5x">
                             <i class="devicon-react-original-wordmark colored"></i>
                         </span>
@@ -226,8 +226,8 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6">
-                    <div class="service-item">
+                <div class="col-md-3 col-sm-6 outer-skill">
+                    <div class="service-item align-left slide-in">
                         <span class="fa-stack fa-5x">
                             <i class="devicon-nodejs-plain-wordmark colored"></i>
                         </span>
@@ -237,8 +237,8 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6">
-                    <div class="service-item">
+                <div class="col-md-3 col-sm-6 outer-skill">
+                    <div class="service-item align-left slide-in">
                         <span class="fa-stack fa-5x">
                             <i class="devicon-express-original-wordmark colored"></i>
                         </span>
@@ -248,8 +248,8 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6">
-                    <div class="service-item">
+                <div class="col-md-3 col-sm-6 outer-skill">
+                    <div class="service-item align-right slide-in">
                         <span class="fa-stack fa-5x">
                             <i class="devicon-mongodb-plain-wordmark colored"></i>
                         </span>
@@ -259,8 +259,8 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6">
-                  <div class="service-item">
+                <div class="col-md-3 col-sm-6 outer-skill">
+                  <div class="service-item align-right slide-in">
                     <span class="fa-stack fa-5x">
                       <i class="devicon-postgresql-plain-wordmark colored"></i>
                     </span>
@@ -269,8 +269,8 @@
                     </h4>
                   </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="service-item">
+                <div class="col-md-3 col-sm-6 outer-skill">
+                    <div class="service-item align-left slide-in">
                         <span class="fa-stack fa-5x">
                             <i class="devicon-html5-plain-wordmark colored"></i>
                         </span>
@@ -280,8 +280,8 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6">
-                    <div class="service-item">
+                <div class="col-md-3 col-sm-6 outer-skill">
+                    <div class="service-item align-left slide-in">
                         <span class="fa-stack fa-5x">
                           <i class="devicon-css3-plain-wordmark colored"></i>
                         </span>
@@ -291,8 +291,8 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6">
-                  <div class="service-item">
+                <div class="col-md-3 col-sm-6 outer-skill">
+                  <div class="service-item align-right slide-in">
                     <span class="fa-stack fa-5x">
                       <i class="devicon-jquery-plain-wordmark colored"></i>
                     </span>
@@ -302,8 +302,8 @@
                   </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6">
-                    <div class="service-item">
+                <div class="col-md-3 col-sm-6 outer-skill">
+                    <div class="service-item align-right slide-in">
                         <span class="fa-stack fa-5x">
                             <i class="devicon-git-plain-wordmark colored"></i>
                         </span>
@@ -721,5 +721,27 @@
         <script src="js/wow.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="js/script.js"></script>
+        <script>
+        function checkSlide(e) {
+          sliderSkills.forEach(skill => {
+            const bottomScrollY = window.scrollY + window.innerHeight;
+            const slideInAt = bottomScrollY - 200;
+            // console.log("slideIn",slideInAt);
+            // console.log(skill.getBoundingClientRect().top);
+            const skillBottom = skill.getBoundingClientRect().top + 157;
+            // console.log("skillBottom",skillBottom);
+            const isHalfShown = slideInAt > skill.getBoundingClientRect().top;
+            // console.log(isHalfShown);
+            const isNotScrolledPast = window.scrollY < skillBottom;
+            if (isHalfShown && isNotScrolledPast) {
+              skill.classList.remove('active');
+            } else {
+              skill.classList.add('active');
+            }
+          })
+        }
+        const sliderSkills = document.querySelectorAll('.service-item');
+        window.addEventListener('scroll', checkSlide)
+        </script>
     </body>
 </html>
