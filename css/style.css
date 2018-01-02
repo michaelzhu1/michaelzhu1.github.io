@@ -448,9 +448,11 @@ ul.work li.active {
 .work .item {
     position: relative;
     min-height: 283px;
+    max-height: 283px;
 }
 
 .work .item img {
+    max-height: 283px;
     width: 100%;
     z-index: 99999;
     min-height: 283px;
@@ -527,6 +529,7 @@ ul.work li.active {
   transform: translateX(80%) scale(0.55);
 }
 .slide-in.active {
+  transition-duration: 1.5s;
   opacity: 1;
   transform: translateX(0%) scale(1);
   margin:0 auto;
